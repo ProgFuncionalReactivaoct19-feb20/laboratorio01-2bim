@@ -1,0 +1,14 @@
+
+
+Dado el dataset data21.csv
+
+Realizar los procesos respectivos para generar dos columnas adicionales llamadas: mesInt, rangoFechas. La columna mesInt se genera en base a la columna mesOc, donde dado el mes en cadena obtener el número de mes; para la columna rangoFechas utilizar edad_mad para generar rangos de fechas, de acuerdo a lo siguiente: 0-20 igual a edad1; 21-30 igual a edad2; 31 a 50 igual a edad3; >= 51 igual a edad4
+
+Para lo siguiente se debe usar un decorador.
+Tomar en consideración que se debe generar un archivo de log para mantener una posible auditoria informática a futuro; en cada registro del archivo se debe generar por ejemplo:
+
+date 2020-01-10 08:49:00.547897;transacción Tranformando información mes Junio; método usado: mes_to_int
+date 2020-01-10 08:59:00.547897;transacción Tranformando información edad 30; método usado: rango_fechas
+
+
+Librerías a usar: pandas
